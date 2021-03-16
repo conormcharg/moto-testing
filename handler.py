@@ -20,7 +20,7 @@ def add_entry(event, context):
 
         r = {
             'statusCode': 200,
-            'body': event
+            'body': json.dumps(event)
         }
 
         return r
