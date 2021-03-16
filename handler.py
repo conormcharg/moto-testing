@@ -18,6 +18,8 @@ def add_entry(event, context):
 
         response = put_item(name, location, dynamodb)
 
+        return response
+
     response= {
             "statusCode":200
         }
