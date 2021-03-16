@@ -4,6 +4,7 @@ from botocore.exceptions import ClientError
 from moto import mock_dynamodb2
 import os
 
+
 @mock_dynamodb2
 class TestPutItem(unittest.TestCase):
     def setUp(self):
