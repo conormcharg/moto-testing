@@ -12,6 +12,7 @@ install:
   - npm install
 script: 
   - python test_put_item.py -v 
+  
 
 after_success:
   - serverless deploy
