@@ -56,7 +56,7 @@ class TestPutItem(unittest.TestCase):
         put_item("Conor", "Houston", self.dynamodb)
         result = get_item("Conor", "Houston", self.dynamodb)
 
-        self.assertEqual("Houston", result['Location'])
+        self.assertEqual("Houston1", result['Location'])
         self.assertEqual("Conor", result['Name'])
         
 
